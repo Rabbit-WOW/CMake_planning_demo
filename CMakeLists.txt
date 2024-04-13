@@ -12,6 +12,16 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/bin) #设置动态库�
 set(Process_Dir ${CMAKE_SOURCE_DIR}/src/process) #该目录指定为变量Process_Dir
 set(Pnc_Map_Dir ${CMAKE_SOURCE_DIR}/src/pnc_map)
 
+
+# 三方库
+set(EIGEN3_INCLUDE_DIR "D:/progrom files/IDE Support library/Third_Party/eigen-3.4.0") #记录eigen库所在位置
+list(APPEND CMAKE_MODULE_PATH ${EIGEN3_INCLUDE_DIR}/cmake) #把cmake这个目录添加到CMAKE_MODULE_PATH里面！
+message("CMAKE_MODULE_PATH = ${CMAKE_MODULE_PATH}") #打印目录的信息!
+find_package(Eigen3 3.4 REQUIRED) #由于上一条语句，会直接从cmake文件夹中搜索想要的文件！（搜索3.4版本的REQUIRED文件）
+if(TARGET Eigen3::Eigen)
+    message(STATUS "***** Eigen3 3.4 found in ${EIGEN3_INCLUDE_DIR} *****")
+endif()
+
+
 #添加子目录
 add_subdirectory(src) #去找子目录里面的CMakeLists.txt有就能找到，然后继续运行！父目录的设置会传递到子目录中！继承！懂？
-
