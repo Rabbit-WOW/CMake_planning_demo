@@ -5,49 +5,10 @@
 		{
 			"compiler" : 
 			{
-				"id" : "GNU",
-				"implicit" : 
-				{
-					"includeDirectories" : 
-					[
-						"D:/progrom files/IDE Support library/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include",
-						"D:/progrom files/IDE Support library/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed",
-						"D:/progrom files/IDE Support library/mingw64/x86_64-w64-mingw32/include"
-					],
-					"linkDirectories" : 
-					[
-						"D:/progrom files/IDE Support library/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0",
-						"D:/progrom files/IDE Support library/mingw64/lib/gcc",
-						"D:/progrom files/IDE Support library/mingw64/x86_64-w64-mingw32/lib",
-						"D:/progrom files/IDE Support library/mingw64/lib"
-					],
-					"linkFrameworkDirectories" : [],
-					"linkLibraries" : 
-					[
-						"mingw32",
-						"gcc",
-						"moldname",
-						"mingwex",
-						"advapi32",
-						"shell32",
-						"user32",
-						"kernel32",
-						"iconv",
-						"mingw32",
-						"gcc",
-						"moldname",
-						"mingwex"
-					]
-				},
-				"path" : "D:/progrom files/IDE Support library/mingw64/bin/gcc.exe",
-				"version" : "8.1.0"
+				"implicit" : {},
+				"path" : "D:/progrom files/IDE Support library/mingw64/bin/gcc.exe"
 			},
-			"language" : "C",
-			"sourceFileExtensions" : 
-			[
-				"c",
-				"m"
-			]
+			"language" : "C"
 		},
 		{
 			"compiler" : 
@@ -104,6 +65,7 @@
 				"cc",
 				"cpp",
 				"cxx",
+				"m",
 				"mm",
 				"mpp",
 				"CPP",
