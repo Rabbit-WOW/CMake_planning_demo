@@ -9,6 +9,8 @@
 
 set(CMAKE_CXX_STANDARD 17) #设置C++版本
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/bin) #设置动态库与可执行文件的输出目录
+set(Process_Dir ${CMAKE_SOURCE_DIR}/src/process) #该目录指定为变量Process_Dir
+set(Pnc_Map_Dir ${CMAKE_SOURCE_DIR}/src/pnc_map)
 
 #添加子目录
 add_subdirectory(src) #去找子目录里面的CMakeLists.txt有就能找到，然后继续运行！父目录的设置会传递到子目录中！继承！懂？
