@@ -4,7 +4,7 @@
 # compile CXX with D:/progrom files/IDE Support library/mingw64/bin/g++.exe
 CXX_DEFINES = -Dpnc_map_EXPORTS
 
-CXX_INCLUDES = 
+CXX_INCLUDES = @CMakeFiles/pnc_map.dir/includes_CXX.rsp
 
 CXX_FLAGS = -g -std=gnu++17
 

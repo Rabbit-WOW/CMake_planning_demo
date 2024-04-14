@@ -64,6 +64,16 @@ CMAKE_BINARY_DIR = D:\Code\C++\Cmake\CMake_planning_demo\build
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running tests..."
+	"D:\progrom files\IDE Support library\cmake-3.29.2-windows-x86_64\bin\ctest.exe" --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+.PHONY : test/fast
+
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake cache editor..."
@@ -167,6 +177,32 @@ show_result/fast:
 	$(MAKE) $(MAKESILENT) -f src\show_result\CMakeFiles\show_result.dir\build.make src/show_result/CMakeFiles/show_result.dir/build
 .PHONY : show_result/fast
 
+#=============================================================================
+# Target rules for targets named map_test
+
+# Build rule for target.
+map_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 map_test
+.PHONY : map_test
+
+# fast build rule for target.
+map_test/fast:
+	$(MAKE) $(MAKESILENT) -f test\map_test\CMakeFiles\map_test.dir\build.make test/map_test/CMakeFiles/map_test.dir/build
+.PHONY : map_test/fast
+
+#=============================================================================
+# Target rules for targets named process_test
+
+# Build rule for target.
+process_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 process_test
+.PHONY : process_test
+
+# fast build rule for target.
+process_test/fast:
+	$(MAKE) $(MAKESILENT) -f test\process_test\CMakeFiles\process_test.dir\build.make test/process_test/CMakeFiles/process_test.dir/build
+.PHONY : process_test/fast
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -175,9 +211,12 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... test
+	@echo ... map_test
 	@echo ... planning_main
 	@echo ... pnc_map
 	@echo ... process
+	@echo ... process_test
 	@echo ... show_result
 .PHONY : help
 

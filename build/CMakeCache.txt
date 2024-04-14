@@ -269,6 +269,15 @@ Project_IS_TOP_LEVEL:STATIC=ON
 Project_SOURCE_DIR:STATIC=D:/Code/C++/Cmake/CMake_planning_demo
 
 //Value Computed by CMake
+map_test_BINARY_DIR:STATIC=D:/Code/C++/Cmake/CMake_planning_demo/build/test/map_test
+
+//Value Computed by CMake
+map_test_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+map_test_SOURCE_DIR:STATIC=D:/Code/C++/Cmake/CMake_planning_demo/test/map_test
+
+//Value Computed by CMake
 planning_BINARY_DIR:STATIC=D:/Code/C++/Cmake/CMake_planning_demo/build
 
 //Value Computed by CMake
@@ -303,6 +312,15 @@ process_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
 process_SOURCE_DIR:STATIC=D:/Code/C++/Cmake/CMake_planning_demo/src/process
+
+//Value Computed by CMake
+process_test_BINARY_DIR:STATIC=D:/Code/C++/Cmake/CMake_planning_demo/build/test/process_test
+
+//Value Computed by CMake
+process_test_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+process_test_SOURCE_DIR:STATIC=D:/Code/C++/Cmake/CMake_planning_demo/test/process_test
 
 //Value Computed by CMake
 show_result_BINARY_DIR:STATIC=D:/Code/C++/Cmake/CMake_planning_demo/build/src/show_result
@@ -420,7 +438,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=5
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=7
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
